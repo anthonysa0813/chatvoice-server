@@ -15,8 +15,6 @@ router.get("/", async (req, res) => {
     messages: [{ role: "user", content: question }],
   });
 
-  console.log(completion.data.choices[0].message);
-
   res.json({
     data: completion.data.choices[0].message.content,
   });
