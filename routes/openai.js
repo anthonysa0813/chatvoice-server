@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   const { question } = req.body;
 
   const configuration = new Configuration({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
   const completion = await openai.createChatCompletion({
